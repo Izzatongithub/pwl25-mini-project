@@ -2,6 +2,10 @@
 
 Judul Program: API untuk program to do list, yang dapat melakukan CRUD
 
+#### Struktur tabel
+<img width="1188" height="458" alt="image" src="https://github.com/user-attachments/assets/ed0f3f31-fdfd-4a1a-87fd-2920be340955" />
+
+
 1. GET, digunakan untuk menampilkan data.
    Dari gambar dibawah, hasil GET yang menampilkan semua data
    <img width="1920" height="1080" alt="GET, menampilkan seluruh data " src="https://github.com/user-attachments/assets/1193c50c-f1ec-416c-aa03-d8edcda9bdc7" />

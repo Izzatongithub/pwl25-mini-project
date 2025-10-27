@@ -57,7 +57,7 @@ const deleteTugas = async (id_tugas) => {
         const [result] = await db.query('DELETE FROM tugas WHERE id_tugas = ?', [id_tugas]);
         return result.affectedRows;
     } catch (error) {
-        console.error('Error in deleteCar model:', error.message);
+        console.error('Error in deleteTugas model:', error.message);
         throw new Error(`Database query failed: ${error.message}`);
     }
 };

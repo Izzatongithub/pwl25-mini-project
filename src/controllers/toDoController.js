@@ -128,7 +128,7 @@ const deleteTugas = async (req, res) => {
 
         res.json({
             success: true,
-            message: 'Tugas update successfully'
+            message: 'Tugas delete successfully'
         });
 
     } catch (error) {

@@ -45,7 +45,7 @@ const createTugas = async (req, res) => {
     try {
 
         //kode debug
-        console.log('Isi req.body:', req.body);
+        // console.log('Isi req.body:', req.body);
 
         const {judul, deskripsi, deadline, status, prioritas, dibuat_pada} = req.body;
 
@@ -76,8 +76,8 @@ const createTugas = async (req, res) => {
 const updateTugas = async (req, res) => {
     try {
 
-        console.log("Params:", req.params);
-        console.log("Body:", req.body);
+        // console.log("Params:", req.params);
+        // console.log("Body:", req.body);
 
         const {id_tugas} = req.params;
         const {tugasId, judul, deskripsi, deadline, status, prioritas, dibuat_pada} = req.body;

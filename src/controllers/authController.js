@@ -93,7 +93,7 @@ exports.login = async(req, res) => {
         );
 
         // response sukses dengan token
-        res.json({success: " true, false}"});
+        res.json({success: true, token});
 
     }catch(error){
         //handle error databse atau server

@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const toDoController = require('../controllers/toDoController');
-
 const validateTugas = require('../middleware/tugasValidate');
 
 //tambahkan middleware auth

@@ -5,17 +5,25 @@ const toDoController = require('../controllers/toDoController');
 
 const validateTugas = require('../middleware/tugasValidate');
 
-//get all cars
-router.get('/', toDoController.getAllTugas);
+//tambahkan middleware auth
+const authenticateToken = require("../middleware/authMiddleware")
+
+//get all data
+router.get('/', authenticateToken, toDoController.getAllTugas);
 
 //get car by id
 router.get('/:id_tugas', toDoController.getTugasById);
 
-//post create new car
-router.post('/', validateTugas, toDoController.createTugas);
+//post create new data
+router.post('/', authenticateToken, validateTugas, toDoController.createTugas);
+
+// router.post('/', validateTugas, toDoController.createTugas);
+// router.post('/', toDoController.createTugas);
 
 //put tugas by id
-router.put('/:id_tugas', validateTugas, toDoController.updateTugas);
+router.put('/:id_tugas', authenticateToken, validateTugas, toDoController.updateTugas);
+
+// router.put('/:id_tugas', validateTugas, toDoController.updateTugas);
 
 //delete car by id
 router.delete('/:id_tugas', toDoController.deleteTugas);
